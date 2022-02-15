@@ -1,2 +1,3 @@
 ### 100 Day CSS Challenge
-You can also checkout @<a href='https://codepen.io/boraborayoon'>CODEPEN</a>
+I am joining this <a href='https://100dayscss.com/'>100 DAYS CSS CHALLENGE</a> 💻.<br/>
+You can also check out my works at<a href='https://codepen.io/boraborayoon'> CODEPEN</a> ✏️.

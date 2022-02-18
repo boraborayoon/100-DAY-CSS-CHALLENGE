@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+    overflow: hidden;
+    background: #2B3642;
+  }
+  .center {
+    position: absolute;
+    width: 320px;
+    height: 240px; 
+    top: 80px;
+    left: 40px;
+    background: #f3f3f3;
+    box-shadow: 4px 8px 12px 0 rgba(0,0,0,0.5);
+  }
+   .top{
+    position: absolute;
+    z-index: 1;
+    top:0;
+    left:0;
+    right:0;
+    height: 40px;
+    background: #35848B;
+  }
+  input{
+    display: none;
+  }
+  .tab{
+    position: relative;
+    float: left;
+    z-index: 5;	
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .tab.search{
+      float:right;
+  }
+  .tab:hover{
+    color: #fff;
+  }
+  input:checked + .tab{
+      background-color: #F3F3F3;
+      color: #072227;
+  }
+  .content{
+      position: absolute;
+      top:50px;
+      color:#000;
+  }
+  .content .box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(3px);
+    pointer-events: none;
+    padding: 25px;
+    transition: all .3s ease-in;
+  }
+ .content h1{
+    font-weight: 600;
+    font-size: 18px;
+    color: #072227;
+    margin: 0;
+    padding: 0;
+ }
+ .content p {
+     margin:  17px 0;
+ }
+ .content span{
+    display: block;
+    height: 4px;
+    background: #E9E9E9;
+    margin: 6px 0;
+ }
+  #tab1:checked ~ .content #box1,
+  #tab2:checked ~ .content #box2,
+  #tab3:checked ~ .content #box3,
+  #tab4:checked ~ .content #box4 {
+    pointer-events: all;
+	opacity: 1;
+	transform: translateY(0);
+	transition: all .5s ease-out .4s;
+  }

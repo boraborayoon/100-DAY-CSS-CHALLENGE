@@ -22,17 +22,40 @@
       animation: small 0.5s ease-in-out both;
   }
   .active{
-      position: absolute;
-      top:133px;
-      left:133px;
+      position: relative;
       z-index: 2;
       animation: big .5s ease-in-out both;
   }
-
   image{
       width: 100%;
       height: auto;
   }
+  #number0{
+    transform-origin: top left;
+  }
+  #number1{
+    transform-origin: top;
+  }
+  #number2{
+    transform-origin: top right;
+  }
+  #number3{
+    transform-origin: left;
+  }
+  #number5{
+    transform-origin: right;
+  }
+  #number6{
+    transform-origin: bottom left;
+  }
+  #number7{
+    transform-origin: bottom;
+  }
+  #number8{
+    transform-origin: bottom right;
+  }
+
+
 
 .away image{
     opacity: 0;
@@ -43,10 +66,9 @@
 		transform: scale(3.1);
 		z-index: 2;
 	}
-	99% {
-		z-index: 2;
-		transform: scale(1);
-	}
+    50%{
+        transform: scale(1);
+    }
 	100% {
 		z-index: 1;
 	}

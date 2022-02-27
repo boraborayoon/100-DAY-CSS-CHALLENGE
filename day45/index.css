@@ -1,0 +1,55 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+    overflow: hidden;
+    background:#5CA4EA;
+  }
+  .button{
+      position: absolute;
+      top:140px;
+      left:85px;
+      color: white;
+      padding : 20px 30px;
+      cursor: pointer;
+  }
+
+  span{
+      position: absolute;
+      top:0;
+      left:0;
+      right: 0;
+      text-align: center;
+      line-height: 58px;
+      text-transform: uppercase;
+      font-size: 18px;
+      padding-top: 22px;
+  }
+  .border{
+      fill:none;
+      stroke-width: 1;
+  }
+ .big {
+     fill: #5CA4EA;
+     stroke: #91C9FF;
+     transition: all .8s ease-in-out;
+ }
+ .highlight {
+     stroke: white;
+     stroke-dasharray: 40 480;
+     stroke-dashoffset: 40;
+     transition: all .8s ease-in-out;
+ }
+
+.button:hover .big{
+    fill: #4183c5;
+}
+.button:hover .highlight{
+    stroke-dashoffset: -480;
+}

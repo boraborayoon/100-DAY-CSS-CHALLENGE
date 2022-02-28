@@ -1,0 +1,83 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+    overflow: hidden;
+    background:#27AE5F;
+  }
+
+  .dot-1{
+    top: -6px;
+    left: 94px;
+}
+
+.dot-2{
+    top: 9px;
+    left: 39px;
+}
+
+.dot-3{
+    top: 45px;
+    left: 6px;
+}
+
+.dot-4{
+    left: -6px;
+    top: 94px;
+}
+
+.dot-5{
+    bottom: 45px;
+    left: 6px;
+}
+
+.dot-6{
+    bottom: 9px;
+    left: 39px;
+}
+
+.dot-7{
+    bottom: -6px;
+    left: 94px;
+}
+
+.dot-8{
+    bottom: 9px;
+    right: 39px;
+}
+
+.dot-9{
+    bottom: 45px;
+    right: 6px;
+}
+
+.dot-10{
+    right: -6px;
+    top: 94px;
+}
+
+.dot-11{
+    top: 9px;
+    right: 39px;
+}
+
+.dot-12{
+    top: 45px;
+    right: 6px;
+}
+
+
+  @keyframes rotate {
+	0% {
+		transform: scale(0.2) rotate(5deg);
+	}
+	100% {
+		transform: scale(0.2) rotate(380deg);
+	}
+}

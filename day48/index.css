@@ -1,0 +1,37 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+    overflow: hidden;
+    background:#E47411;
+  }
+  .cube{
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      left: 90px;      
+      transform: preserve-3d;
+      transform: rotateX(70deg) rotateZ(-45deg) translateZ(-100px);
+      transition: all 1s ease-in-out;
+      cursor: pointer;
+  }
+  .side{
+      position: absolute;
+      width: 200px;
+      height: 200px;
+  }
+  
+.top{
+    background: #eee;
+}
+
+.bottom{
+    transform: translateX(-200px) translateY(200px) translateZ(-100px);
+    background: #ddd;
+}

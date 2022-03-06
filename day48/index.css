@@ -15,23 +15,56 @@
       position: absolute;
       width: 200px;
       height: 200px;
-      left: 90px;      
+      left: 103px;      
       transform: preserve-3d;
-      transform: rotateX(70deg) rotateZ(-45deg) translateZ(-100px);
       transition: all 1s ease-in-out;
       cursor: pointer;
   }
-  .side{
-      position: absolute;
-      width: 200px;
-      height: 200px;
+  .cube:hover {
+
+    transform:rotateX(-10deg) rotateY(-20deg) rotateZ(400deg) translateZ(-50px) translateX(10px);
+
   }
-  
+  .side{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: -80px;
+    left:0;
+    transform-style: preserve-3d;
+    transform: rotateX(70deg) rotateZ(-45deg) translateZ(-100px);
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+  }
+  .front{
+    background: #fff;
+    transform-origin: bottom;
+    transform: rotateX(70deg) rotateZ(45deg) rotateY(90deg) translateZ(50px) translateX(119px) translateY(51px);
+}
+.back{
+    background: #ccc;
+    transform-origin: bottom;
+    transform: rotateX(70deg) rotateZ(45deg) rotateY(90deg) translateZ(150px) translateX(-34px) translateY(350px);
+}
+.right{
+    background: #ddd;
+    transform-origin: right bottom;
+    transform: rotateX(70deg) rotateZ(-45deg) rotateY(90deg) translateZ(100px) translateX(230px) translateY(-45px);
+}
+.left{
+    background: rgb(247, 247, 247);
+    transform-origin: right bottom;
+    transform: rotateX(70deg) rotateZ(-45deg) rotateY(90deg) translateZ(-100px) translateX(229px) translateY(-41px);
+}
 .top{
     background: #eee;
-}
+} 
 
 .bottom{
-    transform: translateX(-200px) translateY(200px) translateZ(-100px);
-    background: #ddd;
-}
+    transform: rotateX(70deg) rotateZ(-45deg) translateZ(-200px) translateX(-195px) translateY(195px);
+    background: rgb(218, 216, 216);
+} 
+
+
+
+

@@ -1,0 +1,55 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+    overflow: hidden;
+    background:#506172;
+  }
+  .input-box{
+    position: absolute;
+    top:150px;
+    left:65px;
+    inline-size: 200px;
+    padding: 20px 40px;
+    background: white;
+    border-radius: 1ch;
+  }
+  input[type=range] {
+    -webkit-appearance: none; /* 기본슬라이드 숨기기*/
+    width: 100%; /* Firefox에서는 특정한 넓이가 필요*/
+    height: 7px;
+    border-radius: 10px;
+    margin: 10px 0;
+    background: #7AD175; /* Chrome에서 투명하게 출력 */
+  }
+  
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    width: 24px;
+    height: 24px;
+    background: white url(https://100dayscss.com/codepen/slider-thumb.png) no-repeat;
+    background-position: center;
+    background-size: 11px;
+    border: 2px solid #7AD175;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  
+  input[type=range]:focus {
+    outline: none; /* input range에 포커스 되었을 경우 기본 블러처리 제거 */
+  }
+  
+  input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    /* IE에서 기본슬라이드 숨기기  */
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+  }

@@ -39,7 +39,9 @@
     transform-origin: 50% 100%;
     transition: all 3s ease-in-out;
 }
-
+.ikosadron:hover .side{
+    opacity: 0.5;
+}
 .side-1 {
     transform: translateZ(129.2px) rotateZ(90deg) rotateX(159.095deg);
 }

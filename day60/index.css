@@ -1,0 +1,32 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+    overflow: hidden;
+    background:#34495E;
+}
+.cover{
+    background: #E67E22;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top:-50%;
+    opacity: 0.9;
+    z-index: 2;
+    transform-origin: 50% 0%;
+    transition: all .05s ease-in-out;
+}
+.text{
+    position: absolute;
+    top: 150px;
+    left:75px;
+    font-size: 80px;
+    font-weight: 800;
+    color: white;
+}

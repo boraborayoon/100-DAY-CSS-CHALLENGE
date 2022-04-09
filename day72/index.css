@@ -21,42 +21,82 @@
 }
 
 @keyframes ring1 {
-    0%{
+    4%{
         transform: rotateX(0) rotateY(0) rotateZ(0);
     }
     100% {
-        transform: rotateX(360deg) rotateY(-360%) rotateZ(0);
+        transform: rotateX(720deg) rotateY(520deg)
     }
 }
 @keyframes ring2 {
+    8%{
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    100% {
+        transform: rotateX(720deg) rotateY(520deg)
+    }
+}
+@keyframes ring3 {
+    12%{
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    100% {
+        transform: rotateX(720deg) rotateY(520deg)
+    }
+}
+@keyframes ring4 {
+    16%{
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    100% {
+        transform: rotateX(720deg) rotateY(520deg)
+    }
+}
+@keyframes ring5 {
     20%{
         transform: rotateX(0) rotateY(0) rotateZ(0);
     }
     100% {
-        transform: rotateX(360deg) rotateY(-360%) rotateZ(0);
+        transform: rotateX(720deg) rotateY(520deg)
     }
 }
-@keyframes ring3 {
+@keyframes ring6 {
+    24%{
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    100% {
+        transform: rotateX(720deg) rotateY(520deg)
+    }
+}
+@keyframes ring7 {
+    28%{
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    100% {
+        transform: rotateX(720deg) rotateY(520deg)
+    }
+}
+@keyframes ring8 {
+    32%{
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    100% {
+        transform: rotateX(720deg) rotateY(520deg)
+    }
+}
+@keyframes ring9 {
+    36%{
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+    }
+    100% {
+        transform: rotateX(720deg) rotateY(520deg)
+    }
+}
+@keyframes ring10 {
     40%{
         transform: rotateX(0) rotateY(0) rotateZ(0);
     }
     100% {
-        transform: rotateX(360deg) rotateY(-360%) rotateZ(0);
-    }
-}
-@keyframes ring4 {
-    60%{
-        transform: rotateX(0) rotateY(0) rotateZ(0);
-    }
-    100% {
-        transform: rotateX(360deg) rotateY(-360%) rotateZ(0);
-    }
-}
-@keyframes ring0 {
-    80%{
-        transform: rotateX(0) rotateY(0) rotateZ(0);
-    }
-    100% {
-        transform: rotateX(360deg) rotateY(-360%) rotateZ(0);
+        transform: rotateX(720deg) rotateY(520deg)
     }
 }

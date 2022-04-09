@@ -13,7 +13,7 @@ for(let i=1;i<=10;i++){
     ring.style.borderColor = 'white';
     ring.style.borderStyle = 'solid';
     ring.style.transformOrigin = '50% 50%';
-    ring.style.animationName = 'ring'+i%5;
+    ring.style.animation = 'ring'+i;
     ring.style.animationDuration = '5s';
     ring.style.animationTimingFunction = 'ease-in-out';
     ring.style.animationIterationCount = 'infinite';

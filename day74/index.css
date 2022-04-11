@@ -1,0 +1,65 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+    overflow: hidden;
+    background: #1ABC9C;
+    color: white;
+}
+.center{
+    position: absolute;
+    top:200px;
+    left:200px;
+    transform: translate(-50%, -50%);
+}
+.input{
+    display: none;
+}
+.button{
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5px;
+    background: none;
+    border: 1px solid #fff;
+	color: #fff;
+	cursor: pointer;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 27px;
+	transition: all .5s ease-in-out;
+}
+.button:hover{
+    background: #16a085;
+    transition: all .3s ease-in-out;
+}
+#input-1:checked ~ .button-1{
+    color: #1ABC9C;
+    background: white;
+    transition: all .5s ease-in-out;
+}
+#input-2:checked ~ .button-2{
+    color: #1ABC9C;
+    background: white;
+    transition: all .5s ease-in-out;
+}
+#input-3:checked ~ .button-3{
+    color: #1ABC9C;
+    background: white;
+    transition: all .5s ease-in-out;
+}
+#input-4:checked ~ .button-4{
+    color: #1ABC9C;
+    background: white;
+    transition: all .5s ease-in-out;
+}

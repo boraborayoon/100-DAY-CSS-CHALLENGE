@@ -1,0 +1,59 @@
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+.top{
+    position: relative;
+    top:0;
+    background: skyblue;
+    height: 280px;
+}
+.bottom{
+    position: relative;
+    top: 0;
+    background: rgb(112, 69, 34);
+    height: 120px;
+}
+.ball{
+    position: relative;
+    top: 100px;
+    left: 360px;
+    width: 40px;
+    height: 40px;
+    background: red;
+    border-radius: 50%;
+    z-index: 2;
+    animation: ball 3s infinite ease-in;
+}
+
+@keyframes ball {
+    0%{
+        transform: translate(0,0);
+    }
+    10%{
+        transform: translate(-10px,10px);
+    }
+    20%{
+        transform: translate(-50px,140px)
+    }
+    40%{
+        transform: translate(-150px,50px);
+    }
+    60%{
+        transform: translate(-200px, 140px);
+    }
+    80%{
+        transform: translate(-360px,20px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}

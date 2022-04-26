@@ -9,6 +9,7 @@ for(let i=1;i<=30;i++){
     ring.style.animationDuration = '4s';
     ring.style.animationDelay = (i-1) * (4/30) * -1+'s';
     ring.style.animationIterationCount = 'infinite';
+    ring.style.animationTimingFunction='cubic-bezier(.98,.02,.97,.12)'
     for(let j=1;j<=24;j++){
         const stripe = document.createElement('div')
         stripe.style.position = 'absolute';

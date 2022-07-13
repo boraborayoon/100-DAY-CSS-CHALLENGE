@@ -1,0 +1,125 @@
+.frame {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 400px;
+	margin-top: -200px;
+	margin-left: -200px;
+	border-radius: 2px;
+	box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.1);
+	overflow: hidden;
+	background: #E0EFE5;
+}
+.tree{
+    position: absolute;
+    z-index: 2;
+    top: 120px;
+    left: 198px;
+}
+.tree:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #B9D6C2;
+    bottom: 0px;
+    left: -38px;
+    border-radius: 2px;
+    animation: scaleX .7s ease-in-out both;
+}
+.leafs {
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    top: -60px;
+    left: -60px;
+    border-style: solid;
+    border-width: 0 62px 204px 62px;
+    border-color: transparent transparent #0daa42 transparent;
+    animation: scaleX 1s ease-in-out .7s both;
+}
+.leafs:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: -62px;
+    border-style: solid;
+    border-width: 0 0px 204px 62px;
+    border-color: transparent transparent rgba(0,0,0,0.2) transparent;
+}
+.trunk {
+    position: relative;
+    width: 4px;
+    height: 200px;
+    background: #E8C87E;
+    border-radius: 2px;
+    transform-origin: 50% 100%;
+    animation: scaleY .7s ease-in-out both;
+}
+.branch {
+    position: absolute;
+    width: 4px;
+    background: #E8C87E;
+    border-radius: 2px;
+    transform-origin: 50% 100%;
+}
+.branch-1{
+    height: 20px;
+    transform: rotate(-40deg);
+}
+.branch-2 {
+    transform: rotate(40deg);
+    top: 20px;
+    height: 30px;
+}
+.branch-3{
+    top: 40px;
+    height: 40px;
+    transform: rotate(-40deg);
+}
+.branch-4 {
+    transform: rotate(40deg);
+    top: 60px;
+    height: 50px;
+}
+.branch-5{
+    top: 80px;
+    height: 60px;
+    transform: rotate(-40deg);
+}
+
+@keyframes scaleY {
+	0% {
+		transform: scaleY(0);
+	}
+	60% {
+		transform: scaleY(1.1);
+	}
+	80% {
+		transform: scaleY(0.95);
+	}
+	100% {
+		transform: scaleY(1);
+	}
+}
+
+@keyframes scaleX {
+	0% {
+		transform: scaleX(0);
+	}
+	60% {
+		transform: scaleX(1.1);
+	}
+	80% {
+		transform: scaleX(0.95);
+	}
+	100% {
+		transform: scaleX(1);
+	}
+}
